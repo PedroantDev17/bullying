@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family:'Montserrat';
+    src: url(../fonts-text/Montserrat/static/Montserrat-SemiBold.ttf) format(opentype);
+
+    font-family: 'Open Sans';
+    src: url(../fonts-text/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+
+    font-family: 'Lato';
+    src: url(../fonts-text/Lato/Lato-Black.ttf);
+}
+
 :root{
     /*tema do site*/
     --azul-bem-escuro:#010440;
@@ -7,12 +18,16 @@
     --laranja-terroso:#D98B48;
     --vermelho-muito-escuro:#400101;
     --cinza-médio:#A6A6A6;
+    
+    /* Fonts de texto*/
+    --font-títulos:'Montserrat';
+    --font-textos:'Open Sans';
+    --font-subtitulos:'Lato';
 }
 
 body{
     margin: 0px;
-    padding: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;  
 }
 
 *{
@@ -26,6 +41,7 @@ header{
 }
 
 header h1{
+    font-family: var(--font-títulos);
     padding: 10px;
     text-align: center;
 }
@@ -40,6 +56,9 @@ section > p, h2{
      margin-left: 10px;
 }
 
+section.imagem p, section.normal p{
+    font-family: var(--font-textos);
+}
 section.normal{
     background-color: darkgray;
 }
