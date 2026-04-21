@@ -65,7 +65,7 @@ section.imagem p{
 section.normal{
     background-color: var(--cinza-médio);
 }
-section.imagem > p, section.imagem h2 {
+section.imagem > p, section.imagem h2{
     background-color: rgba(0, 0, 0, 0.726);
     color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -87,6 +87,19 @@ section.imagem {
     align-content: center;
 }
 
+section#link a{
+    padding: 10px 45vh 10px 45vh;
+     background-color: rgba(0, 0, 0, 0.726);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 35px;
+    text-decoration: none;
+    font-family: var(--font-subtitulos)
+}
+section#link a:hover{
+    color: var(--vermelho-muito-escuro);
+    transition: 0.5s;
+    text-shadow: 2px 2px 5px white;
 
-
-
+}
