@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family:'Montserrat';
-    src: url(../fonts-text/Montserrat/static/Montserrat-SemiBold.ttf) format(opentype);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sriracha&display=swap');
 
+@font-face {
     font-family: 'Open Sans';
     src: url(../fonts-text/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
 
-    font-family: 'Lato';
+@font-face {
+      font-family: 'Lato';
     src: url(../fonts-text/Lato/Lato-Black.ttf);
 }
 
@@ -36,8 +37,7 @@ body{
 }
 
 header{
-    background-color: peru;
-    box-shadow: inset 0px 0px 18px 0px white;
+    background-image: linear-gradient(to right, var(--laranja-terroso), white );
 }
 
 header h1{
@@ -45,22 +45,20 @@ header h1{
     padding: 10px;
     text-align: center;
 }
-
-section{
-   background-color: beige;
-}
-
 section > p, h2{
-    line-height: 190%;
-     width: 100vh;
-     margin-left: 10px;
+    line-height: 218%;
+    width: 115vh;
+    padding: 10px 0px 15px 15px;
 }
-
+section > h2{
+    font-family: var(--font-subtitulos);
+    font-size: 35px;
+}
 section.imagem p, section.normal p{
     font-family: var(--font-textos);
 }
 section.normal{
-    background-color: darkgray;
+    background-color: var(--cinza-médio);
 }
 
 
