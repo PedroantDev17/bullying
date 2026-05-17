@@ -18,7 +18,7 @@
     --azul-forte:#121AA6;
     --laranja-terroso:#D98B48;
     --vermelho-muito-escuro:#400101;
-    --cinza-médio:#A6A6A6;
+    --cinza-médio:#cac4c4;
     
     /* Fonts de texto*/
     --font-títulos:'Montserrat';
@@ -58,7 +58,7 @@ section.normal p{
 section.imagem p{
     font-family: var(--font-textos);
     line-height: 218%;
-    width: 115vh;
+    width: 90vh;
     padding: 10px 10px 15px 15px;
     font-size: 20px;
 }
@@ -70,6 +70,7 @@ section.imagem > p, section.imagem h2{
     color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 2px solid white;
+    margin-bottom: 10px;
 }
 section#img1{
     background-image: url(../Imagens/Correio-de-Atibaia-Racismo-recreativo.jpeg);
@@ -77,18 +78,19 @@ section#img1{
     background-attachment: fixed;
 }
 section.imagem {
-    display:grid;
-    background-image: url(../Imagens/racismo.webp);
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 20px 0px 20px 0px;
-    grid-auto-flow: row;
-    justify-content: center;
-    align-content: center;
+        display: grid;
+        background-image: url(../Imagens/racismo.webp);
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 20px 0px 20px 0px;
+        grid-auto-flow: row;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
 }
 
 section#link a{
-    padding: 10px 45vh 10px 45vh;
+    padding: 10px 31vh 10px 31vh;
      background-color: rgba(0, 0, 0, 0.726);
     color: rgb(255, 255, 255);
     border-radius: 10px;

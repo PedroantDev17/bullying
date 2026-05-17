@@ -2,7 +2,7 @@
 
 @font-face {
     font-family:'Oswald' ;
-    src: url(Oswald/Oswald-VariableFont_wght.ttf);
+    src: url(../fonts-text/Oswald/Oswald-VariableFont_wght.ttf);
 }
 :root{
     --fonte: 'Oswald';
@@ -11,7 +11,7 @@
 
 body{
      font-family:var(--fonte);
-     background-image: url(Imagens/yamu_jay-school-bullying-9060270.jpg);
+     background-image: url(../Imagens/yamu_jay-school-bullying-9060270.jpg);
      background-attachment: fixed;
      background-size: cover;
      background-position: center;
