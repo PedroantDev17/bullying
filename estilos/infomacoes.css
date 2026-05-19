@@ -12,6 +12,8 @@
       font-family: 'Lato';
     src: url(../fonts-text/Lato/Lato-Black.ttf);
 }
+
+
 :root{
     /*tema do site*/
     --azul-bem-escuro:#010440;
@@ -25,6 +27,10 @@
     --font-textos:'Open Sans';
     --font-subtitulos:'Lato';
 }
+body,html{
+    width: 100%;
+    overflow-x: hidden;
+}
 body{
     margin: 0px;
     padding: 0px;  
@@ -32,6 +38,7 @@ body{
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 header{
     background-image: linear-gradient(to right, var(--laranja-terroso) 35%, #72431a);
@@ -87,6 +94,7 @@ section.imagem {
         align-content: center;
         justify-content: center;
         justify-items: center;
+
 }
 
 section#link a{
