@@ -2,25 +2,25 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(../fonts-text/Montserrat/static/Montserrat-ExtraBold.ttf);
+    src: url(../fonts-text/moderniz/Moderniz.otf);
 }
 @font-face {
     font-family: 'Open Sans';
-    src: url(../fonts-text/Open_Sans/static/OpenSans_SemiCondensed-Regular.ttf);
+    src: url(../fonts-text/titan_one/TitanOne-Regular.ttf);
 }
 @font-face {
       font-family: 'Lato';
-    src: url(../fonts-text/Lato/Lato-Black.ttf);
+    src: url(../fonts-text/evogria/Evogria.otf);
 }
 
 
 :root{
     /*tema do site*/
-    --azul-bem-escuro:#010440;
-    --azul-forte:#121AA6;
-    --laranja-terroso:#D98B48;
-    --vermelho-muito-escuro:#400101;
-    --cinza-médio:#cac4c4;
+    --marrom-escuro:#47351F;
+    --bege-claro:#D0B79A;
+    --marrom-claro-dourado:#C79358;
+    --marrom-preto:#14120F;
+    --marrom-pouco-claro:#946D41;
     
     /* Fonts de texto*/
     --font-títulos:'Montserrat';
@@ -41,7 +41,8 @@ body{
     box-sizing: border-box;
 }
 header{
-    background-image: linear-gradient(to right, var(--laranja-terroso) 35%, #72431a);
+    background-image: linear-gradient(to bottom, var(--marrom-pouco-claro));
+    background-attachment: fixed;
 }
 header h1{
     font-family: var(--font-títulos);
@@ -50,13 +51,15 @@ header h1{
     text-shadow: 0px 2px 5px white;
 }
 section > h2{
-    color: var(--azul-bem-escuro);
-    text-shadow: 2px 2px 5px var(--azul-forte);
+    
+    color:lightyellow;
+    text-shadow: 1px 2px 5px var(--bege-claro);
     font-family: var(--font-subtitulos);
     font-size: 35px;
     
 }
 section.normal p{
+    color: aliceblue;
     font-family: var(--font-textos);
     line-height: 218%;
     padding: 10px 10px 15px 15px;
@@ -67,14 +70,18 @@ section.imagem p{
     line-height: 218%;
     width: 90vh;
     padding: 10px 10px 15px 15px;
-    font-size: 20px;
+    font-size: 25px;
+    text-shadow: 0px 4px 4px black;
 }
 section.normal{
-    background-color: var(--cinza-médio);
+    background-color: var(--marrom-preto);
+}
+section.imagem h2{
+    padding: 0 30px;
 }
 section.imagem > p, section.imagem h2{
-    background-color: rgba(0, 0, 0, 0.726);
-    color: rgb(255, 255, 255);
+    
+    color: aliceblue;
     border-radius: 10px;
     border: 2px solid white;
     margin-bottom: 10px;
@@ -108,7 +115,7 @@ section#link a{
     font-family: var(--font-subtitulos)
 }
 section#link a:hover{
-    color: var(--vermelho-muito-escuro);
+    color: var(--marrom-pouco-claro);
     transition: 0.5s;
     text-shadow: 2px 2px 5px white;
 
